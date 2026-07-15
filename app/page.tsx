@@ -101,7 +101,7 @@ export default function Home() {
     const d = new FormData(e.currentTarget);
     const subject = encodeURIComponent(`درخواست جدید این بود، این شد — ${d.get("name")}`);
     const body = encodeURIComponent(`نام: ${d.get("name")}\nراه ارتباطی: ${d.get("contact")}\nسطح: ${d.get("plan")}\n\nایده یا مسئله:\n${d.get("idea")}\n\nوضعیت فعلی:\n${d.get("stage")}\n\nنتیجهٔ مورد انتظار:\n${d.get("goal")}`);
-    window.location.href = `mailto:contact@inboodinshod.ir?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:starship.amir@gmail.com?subject=${subject}&body=${body}`;
   };
   return <main>
     <nav><a className="logo" href="#top"><span>این بود،</span> این شد</a><div className="navlinks"><a href="#method">{t.nav[0]}</a><a href="#services">{t.nav[1]}</a><a href="#market">{t.nav[2]}</a><a href="#apply">{t.nav[3]}</a></div><button className="lang" onClick={()=>setLang(lang === "fa" ? "en" : "fa")}>{lang === "fa" ? "EN" : "فا"}</button></nav>
@@ -114,6 +114,6 @@ export default function Home() {
     <section className="about"><p className="eyebrow">{t.aboutTag}</p><h2>{t.aboutTitle}</h2><p>{t.aboutText}</p><div className="signature">Amir Ahmadi · axamir</div></section>
     <section id="apply" className="apply"><div><div className="section-tag">05 — START</div><h2>{t.intakeTitle}</h2><p>{t.intakeText}</p><small>inboodinshod.ir</small></div><form onSubmit={submit}><label>{t.labels[0]}<input name="name" required placeholder={t.placeholders[0]}/></label><label>{t.labels[1]}<input name="contact" required placeholder={t.placeholders[1]}/></label><label className="full">{t.labels[2]}<textarea name="idea" required rows={5} placeholder={t.placeholders[2]}/></label><label>{t.labels[3]}<input name="stage" placeholder={t.placeholders[3]}/></label><label>{t.labels[4]}<input name="goal" placeholder={t.placeholders[4]}/></label><label className="full">{t.labels[5]}<select name="plan">{t.options.map(x=><option key={x}>{x}</option>)}</select></label><button>{t.send}<span>←</span></button><p className="privacy">{t.privacy}</p></form></section>
     <section className="faq"><h2>{t.faqTitle}</h2>{t.faqs.map((x,i)=><details key={x[0]}><summary><span>0{i+1}</span>{x[0]}</summary><p>{x[1]}</p></details>)}</section>
-    <footer><a className="logo" href="#top"><span>این بود،</span> این شد</a><p>{t.footer}</p><div><a href="https://github.com/axamir" target="_blank">GitHub</a><a href="mailto:contact@inboodinshod.ir">Email</a><button onClick={()=>setLang(lang === "fa" ? "en" : "fa")}>{lang === "fa" ? "English" : "فارسی"}</button></div></footer>
+    <footer><a className="logo" href="#top"><span>این بود،</span> این شد</a><p>{t.footer}</p><div><a href="https://github.com/axamir" target="_blank">GitHub</a><a href="mailto:starship.amir@gmail.com">Email</a><button onClick={()=>setLang(lang === "fa" ? "en" : "fa")}>{lang === "fa" ? "English" : "فارسی"}</button></div></footer>
   </main>;
 }
