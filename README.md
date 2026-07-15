@@ -45,6 +45,7 @@
 app/                       وب‌سایت دوزبانه
 docs/OPERATING_MODEL.md    مدل عملیاتی و خدمات
 docs/INTAKE.md             پرسش‌های شروع پروژه
+docs/DOMAIN_SETUP.md       راهنمای اتصال دامنه
 .github/workflows/         انتشار GitHub Pages
 ```
 
@@ -61,4 +62,3 @@ docs/INTAKE.md             پرسش‌های شروع پروژه
 A Persian-first idea and AI co-creation studio led by Amir Ahmadi. It transforms raw thoughts, expertise and opportunities into structured, buildable, presentable and sellable projects.
 
 The website is bilingual, with Persian as the default experience.
-
